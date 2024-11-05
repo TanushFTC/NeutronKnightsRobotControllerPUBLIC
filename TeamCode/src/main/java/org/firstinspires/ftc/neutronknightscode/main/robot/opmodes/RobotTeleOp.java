@@ -34,6 +34,8 @@ public class RobotTeleOp extends RobotOpMode {
         if(gamepad1.a && !setInverted){
             setInverted = true;
             inverted = !inverted;
+        } else {
+            setInverted = gamepad1.a;
         }
 
         if(inverted){
